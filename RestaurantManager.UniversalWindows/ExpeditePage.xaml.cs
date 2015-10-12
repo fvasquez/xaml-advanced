@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -30,6 +31,13 @@ namespace RestaurantManager.UniversalWindows
         private void HomeButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(MainPage));
+        }
+
+        private void ClearOrdersButton_Click(object sender, RoutedEventArgs e)
+        {
+            var orderItems = (ObservableCollection<string>)OrderItemsGridView.ItemsSource;
+
+            orderItems.Clear();
         }
     }
 }

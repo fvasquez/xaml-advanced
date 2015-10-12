@@ -6,7 +6,8 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
-    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Grid x:Name="OrderGrid" DataContext="{StaticResource DataManager}"
+          Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="2*"/>
             <RowDefinition Height="1*"/>
@@ -24,9 +25,9 @@
         </AppBar>
         <TextBlock Grid.Row="1" Grid.Column="1" Text="Special Requests:"/>
         <TextBlock Grid.Row="1" Grid.Column="2" Text="Order Items:"/>
-        <Button x:Name="AddToOrderButton" Content="Add to Order" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <Button x:Name="SubmitOrderButton" Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
-        <ListView Grid.Row="1" Grid.RowSpan="3" Grid.Column="0"/>
-        <ListView Grid.Row="2" Grid.RowSpan="2" Grid.Column="2"/>
+        <Button x:Name="AddToOrderButton" Click="AddToOrderButton_Click" Content="Add to Order" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <Button x:Name="SubmitOrderButton" Click="SubmitOrderButton_Click" Content="Submit Order" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+        <ListView x:Name="MenuItemsListView" ItemsSource="{Binding MenuItems}" Grid.Row="1" Grid.RowSpan="3" Grid.Column="0"/>
+        <ListView x:Name ="SelectedMenuItemsListView" ItemsSource="{Binding CurrentlySelectedMenuItems}" Grid.Row="2" Grid.RowSpan="2" Grid.Column="2"/>
     </Grid>
 </Page>
