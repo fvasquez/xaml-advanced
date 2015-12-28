@@ -26,6 +26,25 @@
             <RowDefinition Height="0.10*"/>
         </Grid.RowDefinitions>
         <GridView Grid.Row="1" ItemsSource="{Binding OrderItems}">
+            <GridView.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <StackPanel Height="300" Width="180" Background="Gray">
+                            <ListView ItemsSource="{Binding Items}" Height="150" Background="MidnightBlue">
+                                <ListView.ItemTemplate>
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Title}"/>
+                                    </DataTemplate>
+                                </ListView.ItemTemplate>
+                            </ListView>
+                            <TextBlock Text="{Binding Table.Description}" Style="{StaticResource SubtitleTextBlockStyle}"/>
+                            <TextBlock Text="Special Notes:" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <TextBlock Text="{Binding SpecialRequests}" Style="{StaticResource BodyTextBlockStyle}"/>
+                            <Button Content="Delete" HorizontalAlignment="Center"/>
+                        </StackPanel>
+                    </StackPanel>
+                </DataTemplate>
+            </GridView.ItemTemplate>
         </GridView>
         <Button Content="Clear All Orders" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" />
     </Grid>
