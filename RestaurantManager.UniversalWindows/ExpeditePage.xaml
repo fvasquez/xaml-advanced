@@ -4,6 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:RestaurantManager.UniversalWindows"
     xmlns:models="using:RestaurantManager.Models"
+    xmlns:extensions="using:RestaurantManager.Extensions"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
@@ -26,6 +27,9 @@
             <RowDefinition Height="0.10*"/>
         </Grid.RowDefinitions>
         <GridView Grid.Row="1" ItemsSource="{Binding OrderItems}">
+            <GridView.Resources>
+                <extensions:BooleanToColorConverter x:Key="BooleanToColorConverter"/>
+            </GridView.Resources>
             <GridView.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
@@ -40,7 +44,12 @@
                             <TextBlock Text="{Binding Table.Description}" Style="{StaticResource SubtitleTextBlockStyle}"/>
                             <TextBlock Text="Special Notes:" Style="{StaticResource BodyTextBlockStyle}"/>
                             <TextBlock Text="{Binding SpecialRequests}" Style="{StaticResource BodyTextBlockStyle}"/>
-                            <Button Content="Delete" HorizontalAlignment="Center"/>
+                            <Border>
+                                <Border.Background>
+                                    <SolidColorBrush Color="{Binding Expedite, Converter={StaticResource BooleanToColorConverter}}"/>
+                                </Border.Background>
+                                <Button Content="Delete" HorizontalAlignment="Center"/>
+                            </Border>
                         </StackPanel>
                     </StackPanel>
                 </DataTemplate>
