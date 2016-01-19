@@ -138,6 +138,10 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Restaurant.ViewModels\Restaurant.ViewModels.csproj">
+      <Project>{3fa29bcc-3578-42fb-959b-640d09cee323}</Project>
+      <Name>Restaurant.ViewModels</Name>
+    </ProjectReference>
     <ProjectReference Include="..\RestaurantManager.Extensions\RestaurantManager.Extensions.csproj">
       <Project>{d7e1624e-cba9-4cce-b891-6f3b1dc509b3}</Project>
       <Name>RestaurantManager.Extensions</Name>

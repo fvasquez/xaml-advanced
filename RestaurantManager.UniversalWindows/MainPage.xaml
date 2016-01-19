@@ -21,7 +21,7 @@
         <x:String x:Key="RightClickMessage">Thank you for trying this demo.</x:String>
     </Page.Resources>
     <i:Interaction.Behaviors>
-        <extensions:ThanksRightClickBehavior Message="{StaticResource RightClickMessage}"/>
+        <extensions:RightClickBehavior Message="{StaticResource RightClickMessage}"/>
     </i:Interaction.Behaviors>
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>

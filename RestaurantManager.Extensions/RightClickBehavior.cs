@@ -5,7 +5,7 @@ using Windows.UI.Popups;
 
 namespace RestaurantManager.Extensions
 {
-    public sealed class ThanksRightClickBehavior : DependencyObject, IBehavior
+    public sealed class RightClickBehavior : DependencyObject, IBehavior
     {
         public DependencyObject AssociatedObject { get; private set; }
 

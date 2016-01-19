@@ -6,7 +6,7 @@ namespace RestaurantManager.Models
 {
     public abstract class DataManager : INotifyPropertyChanged
     {
-        protected RestaurantContext Repository { get; private set; }
+        public RestaurantContext Repository { get; private set; }
 
         public event PropertyChangedEventHandler PropertyChanged;
 
