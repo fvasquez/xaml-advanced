@@ -14,6 +14,8 @@ In this assignment, you will implement the MVVM pattern with your existing appli
 
 You will create a base ViewModel class that can be used as a common location for the data repository and INotifyPropertyChanged implementation. The implementation of this base class and the implementation of the factory for the data repository are all provided at the bottom of this unit. Your OrderViewModel and ExpediteViewModel classes will inherit from the base ViewModel class.  The ExpeditePage will use the ExpediteViewModel as it's data context and a similar relationship will exist between the OrderPage and the OrderViewModel.
 
+![](mvvm_implementation.png?raw=true)
+
 ## Instructions
 
 1. Implement a common ViewModel base class to replace the DataManager class
