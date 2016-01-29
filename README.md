@@ -1,6 +1,6 @@
 # xaml-advanced
 
-This repo consists of artifacts from edX course DEV206.2x Designing Advanced Applications using XAML.  The online course was designed by Microsoft and ended on January 20, 2016.  What follows are instructions for the last homework assignment I completed for the course.
+This repo consists of artifacts from edX course DEV206.2x Designing Advanced Applications using XAML.  The online course was designed and conducted by Microsoft and ended on January 20, 2016.  The remainder of this README describes the last homework assignment I completed for the course.
 
 ## Homework 4
 
