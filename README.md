@@ -4,7 +4,7 @@ This repo consists of artifacts from edX course DEV206.2x Designing Advanced App
 
 ## Overview
 
-[![Overview video](http://img.youtube.com/vi/KHm9wMoYN6Y/0.jpg)](http://www.youtube.com/watch?v=KHm9wMoYN6Y)
+[![Overview video](http://img.youtube.com/vi/KHm9wMoYN6Y/0.jpg)](http://www.youtu.be/KHm9wMoYN6Y)
 
 ## Homework 4
 
