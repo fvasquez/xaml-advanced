@@ -2,6 +2,10 @@
 
 This repo consists of artifacts from edX course DEV206.2x Designing Advanced Applications using XAML.  The online course was designed and conducted by Microsoft and ended on January 20, 2016.  The remainder of this README describes the last homework assignment I completed for the course.
 
+## Overview
+
+[![Overview video](http://img.youtube.com/vi/KHm9wMoYN6Y/0.jpg)](http://www.youtube.com/watch?v=KHm9wMoYN6Y)
+
 ## Homework 4
 
 In this assignment, you will implement the MVVM pattern with your existing application.
